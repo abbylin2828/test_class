@@ -17,7 +17,7 @@ print(f"💬 提問：{prompt}\n")
 print("🌐 Gemini 正在自主聯網搜尋最新資料中...")
 
 response = client.models.generate_content(
-    model="gemini-3.8-flash",
+    model="gemini-3-flash",
     contents=prompt,
     config=types.GenerateContentConfig(
         tools=[types.Tool(google_search=types.GoogleSearch())],
